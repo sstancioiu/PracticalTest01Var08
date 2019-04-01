@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest01Var08MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/riddle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:gravity="center"
+            android:inputType="text"
+            android:saveEnabled="false"
+            android:hint="Riddle" />
+        <EditText
+            android:id="@+id/answer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:layout_below="@+id/riddle_text"
+            android:layout_alignParentLeft="true"
+            android:inputType="text"
+            android:gravity="center"
+            android:saveEnabled="false"
+            android:hint="Answer"
+            >
+            <requestFocus />
+        </EditText>
+        <Button
+            android:id="@+id/go_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_text"
+            android:layout_centerInParent="true"
+            android:text="@string/press_me" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
